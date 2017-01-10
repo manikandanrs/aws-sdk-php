@@ -1,0 +1,66 @@
+{
+  "version": "2.0",
+  "service": "An example service, deployed with the Octane Service creator, which will query and manipulate a set of beer information",
+  "operations": {
+    "GoBowling": null,
+    "ListCharacters": null
+  },
+  "shapes": {
+    "name": {
+      "base": null,
+      "refs": {
+        "Character$name": null,
+        "GoBowlingRequest$playerName": null
+      }
+    },
+    "Character": {
+      "base": null,
+      "refs": {
+        "characters$member": null
+      }
+    },
+    "GoBowlingRequest": {
+      "base": null,
+      "refs": {
+      }
+    },
+    "GoBowlingResponse": {
+      "base": null,
+      "refs": {
+      }
+    },
+    "ListCharactersRequest": {
+      "base": null,
+      "refs": {
+      }
+    },
+    "ListCharactersResponse": {
+      "base": null,
+      "refs": {
+      }
+    },
+    "WalterException": {
+      "base": null,
+      "refs": {
+      }
+    },
+    "characters": {
+      "base": null,
+      "refs": {
+        "ListCharactersResponse$characters": null
+      }
+    },
+    "errorMessage": {
+      "base": null,
+      "refs": {
+        "WalterException$message": null
+      }
+    },
+    "result": {
+      "base": null,
+      "refs": {
+        "GoBowlingResponse$result": null
+      }
+    }
+  }
+}
